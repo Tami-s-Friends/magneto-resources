@@ -6,7 +6,7 @@ Pre-built binaries used by [pymagneto-core](https://github.com/tami-v-pro/pymagn
 
 | File | Arch | Source |
 |---|---|---|
-| `binaries/busybox-arm64` | ARM64 (arm64-v8a) | busybox 1.38.0, compiled with SELinux support — required for `device.fs` and `about.kernel`/`about.uptime` in pymagneto_core 4.3.0+ |
+| `binaries/busybox-arm64` | ARM64 (arm64-v8a) | busybox 1.38.0, compiled with SELinux support, patched so `stat` omits the timezone from mtime output — required for `device.fs` and `about.kernel`/`about.uptime` in pymagneto_core 4.3.0+ |
 | `binaries/busybox-x86_64` | x86_64 (AVD / emulator) | busybox.net 1.31.0-defconfig-multiarch-musl |
 
 ## Usage
